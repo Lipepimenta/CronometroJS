@@ -4,18 +4,27 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.container{
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding-top: 3rem;
-    background-color: aliceblue;
-    height: 100vh;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container h1 {
-    color: blue;
+    color: #3498db;
 }
 
 .timer {
@@ -26,6 +35,10 @@
     font-size: 55px;
     font-weight: bold;
     color: #333;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .time {
@@ -33,44 +46,52 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-    color: blue;
+    color: #3498db;
     min-width: 90px;
 }
 
-.separator{
+.separator {
     padding: 0 10px;
     color: #525763;
 }
 
-#miliseconds{
+#miliseconds {
     font-size: 30px;
     color: #525763;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 1rem;
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
     border-radius: 30px;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: none;
+    color: #fff;
     transition: all 0.2s ease-in-out;
 }
 
-.btn:hover{
+#startBtn {
+    background-color: #2ecc71;
+}
+
+#pauseBtn, #resumeBtn {
+    background-color: #e74c3c;
+}
+
+#resetBtn {
+    background-color: #3498db;
+}
+
+.btn:hover {
     transform: scale(1.1);
 }
 
-#startBtn{
-    background-color: #175cff;
-    color: #fff;
-}
-
-#pauseBtn, #resumeBtn{
+#pauseBtn, #resumeBtn, #resetBtn {
     display: none;
 }
