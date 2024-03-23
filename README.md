@@ -20,9 +20,9 @@ Um simples cronômetro desenvolvido em HTML, CSS e JavaScript.
 
 <details>
     <summary>Clique aqui para expandir</summary>
-    <img src="iniciar.png">
-    <img src="play.png">
+    <img src="start.png">
     <img src="pause.png">
+    <img src="stopOrReset.png">
 </details>
 
 ## 📖 Como Usar
