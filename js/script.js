@@ -51,6 +51,7 @@ function pauseTimer() {
     isPaused = true;
     pauseBtn.style.display = "none";
     resumeBtn.style.display = "block";
+    resetBtn.style.display = "block";
 }
 
 function resumeTimer() {
@@ -58,6 +59,7 @@ function resumeTimer() {
     isPaused = false;
     resumeBtn.style.display = "none";
     pauseBtn.style.display = "block";
+    resetBtn.style.display = "block";
 }
 
 function resetTimer() {
